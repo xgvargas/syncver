@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+
+/*!
+--- syncver ---
+
+Released under MIT license.
+
+by Gustavo Vargas - @xgvargas - 2018
+
+Original coffee code and issues at: https://github.com/xgvargas/syncver
+*/
+
+// !!! THIS MUST USE UNIX LINE ENDING !!!
+
+require('../build/syncver.js');

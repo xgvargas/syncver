@@ -1,0 +1,52 @@
+{
+  "name": "syncver",
+  "version": "0.1.0",
+  "description": "Update package.json to current installed versions",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "coffee -cbto build src",
+    "dev": "coffee -cwbto build src"
+  },
+  "author": "Gustavo Vargas <xgvargas@gmail.com>",
+  "license": "MIT",
+  "preferGlobal": true,
+  "main": "./lib/syncver",
+  "bin": {
+    "syncver": "./bin/syncver"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "easy-table": "^1.1.1",
+    "yargs": "^10.1.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "coffeescript": "^2.1.1"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "6"
+          },
+          "useBuiltIns": false
+        }
+      ]
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:xgvargas/update-versions.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xgvargas/update-versions/issues"
+  },
+  "homepage": "https://github.com/xgvargas/update-versions#update-versions",
+  "keywords": []
+}
